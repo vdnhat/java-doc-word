@@ -20,12 +20,16 @@ web_event.track("product", "purchase", {
     items: [{
         "type": "product",
         "id": "864115",
+        "name": "Samsung Tivi 32 inch"
         "sku": "5261971730647",
         "brand": "Samsung",
-        "seller_id": "11315",
-        "category": "Điện Tử - Điện Lạnh/Tivi/Tivi 4K",
+        "main_category": "Điện tử - Điện Lạnh",
+        "category_level_1": "Tivi",
+        "category_level_2": "Tivi samsung",
         "price": 4999000,
-        "quantity": 1
+        "quantity": 1,
+        "image_url": "http://...",
+        "page_url": "http://..."
     }],
     dims: {
         payment: {

@@ -11,6 +11,7 @@ Extra is a dictionary of extra information that provides useful such as e-com pr
 | 5 | `tax` | Number | Percent  of tax  \(%\) | 10 |
 | 6 | `delivery_cost` | Number | Cost of delivery value \(in VND, USD,..\)  | 200000 |
 | 7 | `src_search_term` | String | Search term that leads to this product view |  |
+| 8 | `any_fields...` | Any | Any fields to add to extra |  |
 
 #### Data structure sample
 

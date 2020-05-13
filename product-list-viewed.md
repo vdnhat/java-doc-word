@@ -24,10 +24,13 @@ web_event.track("browsing", "product_list_view", {
         "name": "Samsung Tivi 32 inch"
         "sku": "5261971730647",
         "brand": "Samsung",
-        "seller_id": "11315",
-        "category": "Điện Tử - Điện Lạnh/Tivi/Tivi samsung",
+        "main_category": "Điện tử - Điện Lạnh",
+        "category_level_1": "Tivi",
+        "category_level_2": "Tivi samsung",
         "price": 4999000,
-        "quantity": 1
+        "quantity": 1,
+        "image_url": "http://...",
+        "page_url": "http://..."
     },
     {
         "type": "product",
@@ -35,12 +38,15 @@ web_event.track("browsing", "product_list_view", {
         "name": "Samsung Tivi 40 inch"
         "sku": "5261971730648",
         "brand": "Samsung",
-        "seller_id": "11315",
-        "category": "Điện Tử - Điện Lạnh/Tivi/Tivi samsung",
+        "main_category": "Điện tử - Điện Lạnh",
+        "category_level_1": "Tivi",
+        "category_level_2": "Tivi samsung",
         "price": 5099000,
-        "quantity": 1
+        "quantity": 1,
+        "image_url": "http://...",
+        "page_url": "http://..."
     }
-    ],
+    ]
 });
 ```
 
