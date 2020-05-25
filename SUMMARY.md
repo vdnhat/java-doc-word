@@ -24,14 +24,19 @@
 * [Product List Filtered](product-list-filtered.md)
 * [Product click](product-click.md)
 * [Product view](product-view.md)
+* [Add wish list](add-wish-list.md)
+* [Add compare](add-compare.md)
 * [Add to Cart](add-to-cart.md)
 * [Remove  Cart](remove-cart.md)
 * [Cart view](cart-view.md)
+* [View wish list](view-wish-list.md)
+* [View compare list](view-compare-list.md)
 * [Cart checkout](cart-checkout.md)
 * [Payment Info Entered](payment-info-entered.md)
 * [Purchase](purchase.md)
 * [User Identify](user-identify.md)
 * [Reset anonymous ID](reset-anonymous-id.md)
+* [Email subscribe](email-subscribe.md)
 
 ## Integrations
 
