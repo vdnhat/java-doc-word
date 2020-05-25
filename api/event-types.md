@@ -72,9 +72,13 @@ description: There are event list strategy for list events to tracking.
 | Ecommerce | Product List Filtered | browsing | product\_list\_filter | User filtered a product list or category |
 | Ecommerce | Product click | product | click | User clicked on a product |
 | Ecommerce | Product view | product | view | User viewed a product details |
+| Ecommerce | Add Wish  |  | add\_wish\_list | User added a product to my list wish. |
+| Ecommerce | Add compare  | product | add\_compare | User added a product to compare. |
 | Ecommerce | Add to Cart  | product | add\_to\_cart | User added a product to their shopping cart |
 | Ecommerce | Remove  Cart | product | remove\_cart | User removed a product from their shopping cart |
 | Ecommerce | Cart view | product | view\_cart | User viewed their shopping cart |
+| Ecommerce | View wish list | product | view\_wish\_list | User viewed their wish list |
+| Ecommerce | View compare list | product | compare\_list | User viewed their compare list |
 | Ecommerce | Cart checkout | product | checkout | User initiated the order process \(a transaction is created\) |
 | Ecommerce | Payment Info Entered | product | payment | User added payment information |
 | Ecommerce | Purchase  | product | purchase | User purchased and completed the order |
