@@ -55,7 +55,9 @@ description: There are event list strategy for list events to tracking.
       <td style="text-align:left">This event should be sent when a user signs out for your service.</td>
     </tr>
   </tbody>
-</table>## 4. User Anonymous
+</table>
+
+## 4. User Anonymous
 
 > The reset method only clears the cookies and localStorage set by SDK . User generates a **uid** and sets this as anonymousId for all new visitors to your site/app.
 
@@ -129,7 +131,9 @@ description: There are event list strategy for list events to tracking.
         to this one</td>
     </tr>
   </tbody>
-</table>## 7. Custom Events \(On any platforms\)
+</table>
+
+## 7. Custom Events \(On any platforms\)
 
 | **Group** |  **Name** | **Category** | **Action** | Trigger |
 | :--- | :--- | :--- | :--- | :--- |

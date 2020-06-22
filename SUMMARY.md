@@ -17,6 +17,8 @@
 
 ## SDK Web Tracking <a id="web-tracking"></a>
 
+---
+
 * [Main code](main-code.md)
 * [Event track function](event-track.md)
 * [Products Searched](products-searched.md)
