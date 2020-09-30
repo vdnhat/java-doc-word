@@ -1,46 +1,39 @@
 # Table of contents
 
-* [Welcome Page](README.md)
+* [Getting Started](README.md)
 
-## API
+## Tracking Event
 
-* [API Event Track](api/event_track.md)
-* [Context properties](api/context-properties.md)
-* [Product properties](api/product-properties.md)
-* [Dims properties](api/dims-properties.md)
-* [Extra properties](api/extra-properties.md)
-* [User Identify properties](api/user-identify-properties.md)
-* [Event structure](api/data-structure.md)
-* [Event types](api/event-types.md)
-* [API Import Item](api/dynamic-item.md)
-* [API Product feeds](api/api-product-feeds.md)
+* [Log Event](tracking-event/log-event.md)
+* [Log Event Custom](tracking-event/log-event-custom.md)
+* [Reset Anonymous ID](tracking-event/reset-anonymous-id.md)
 
-## SDK Web Tracking <a id="web-tracking"></a>
+## Tracking Parameters
 
----
+* [Context Param](tracking-parameters/context-param.md)
+* [Dimension Param](tracking-parameters/dimension-param.md)
+* [Extra Param](tracking-parameters/extra-param.md)
+* [Items Param](tracking-parameters/items-param.md)
 
-* [Main code](main-code.md)
-* [Event track function](event-track.md)
-* [Products Searched](products-searched.md)
-* [Product List Viewed](product-list-viewed.md)
-* [Product List Filtered](product-list-filtered.md)
-* [Product click](product-click.md)
-* [Product view](product-view.md)
-* [Add wish list](add-wish-list.md)
-* [Add compare](add-compare.md)
-* [Add to Cart](add-to-cart.md)
-* [Remove  Cart](remove-cart.md)
-* [Cart view](cart-view.md)
-* [View wish list](view-wish-list.md)
-* [View compare list](view-compare-list.md)
-* [Cart checkout](cart-checkout.md)
-* [Payment Info Entered](payment-info-entered.md)
-* [Purchase](purchase.md)
-* [User Identify](user-identify.md)
-* [Reset anonymous ID](reset-anonymous-id.md)
-* [Email subscribe](email-subscribe.md)
+## How To Tracking?
 
-## Integrations
-
-* [Ecommerce Platform: Magento](integrations/ecommerce-platform-magento.md)
+* [Screen view](how-to-tracking/screen-view.md)
+* [Register](how-to-tracking/register.md)
+* [Sign In](how-to-tracking/sign-in.md)
+* [Sign Out](how-to-tracking/sign-out.md)
+* [Product view](how-to-tracking/product-view.md)
+* [Product click](how-to-tracking/product-click.md)
+* [Product list view](how-to-tracking/product-list-view.md)
+* [Product list search](how-to-tracking/product-list-search.md)
+* [Product list filter](how-to-tracking/product-list-filter.md)
+* [Add wish](how-to-tracking/add-wish.md)
+* [View wish list](how-to-tracking/view-wish-list.md)
+* [Add compare](how-to-tracking/add-compare.md)
+* [View compare list](how-to-tracking/view-compare-list.md)
+* [View cart](how-to-tracking/view-cart.md)
+* [Add to cart](how-to-tracking/add-to-cart.md)
+* [Remove cart](how-to-tracking/remove-cart.md)
+* [Checkout](how-to-tracking/checkout.md)
+* [Make A Purchase](how-to-tracking/make-a-purchase.md)
+* [Allow push notification](how-to-tracking/allow-push-notification.md)
 
