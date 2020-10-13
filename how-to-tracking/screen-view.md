@@ -12,7 +12,7 @@ Here you'll send a named screen view to Analytics whenever the user opens or cha
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let contextObject = ITContextObj(screenName: "HomeViewController")
+let contextObject = ITContextObj(screenName: "<Screen Name>")
 ITAnalytic.logEvent(action: .ITActionEventScreenView, contextObject: contextObject)
 ```
 {% endtab %}
