@@ -49,23 +49,23 @@ pod install --repo-update
 
 #### Initialize Insight SDK
 
-First, configure the shared `ITAnalytics` object inside `AppDelegate`. This make it possible for your app to send data to Analytics. Following:
+First, configure the shared `CDP365Analytic` object inside `AppDelegate`. This make it possible for your app to send data to Analytics. Following:
 
 * Include the necessary headers.
-* Set the ITAnalytics tracker inside `didFinishLaunchingWithOptions`.
+* Set the CDP365Analytic tracker inside `didFinishLaunchingWithOptions`.
 
 Import the Insight module in your `AppDelegate`:
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-import InsightSDK
+import CDP365Analytic
 ```
 {% endtab %}
 
 {% tab title="Objective-C " %}
 ```objectivec
-#import <InsightSDK/InsightSDK-Swift.h>
+#import <CDP365Analytic/CDP365Analytic-Swift.h>
 ```
 {% endtab %}
 {% endtabs %}
@@ -76,13 +76,13 @@ Typically in your app's `didFinishLaunchingWithOption`method:
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-ITAnalytic.configure()
+CDP365Analytic.configure()
 ```
 {% endtab %}
 
 {% tab title="Objective-C" %}
 ```objectivec
-[ITAnalytics configure];
+[CDP365Analytic configure];
 ```
 {% endtab %}
 {% endtabs %}
