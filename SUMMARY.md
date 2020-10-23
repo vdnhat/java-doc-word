@@ -5,7 +5,6 @@
 ## Tracking Event
 
 * [Log Event](tracking-event/log-event.md)
-* [Log Event Custom](tracking-event/log-event-custom.md)
 * [Reset Anonymous ID](tracking-event/reset-anonymous-id.md)
 
 ## Tracking Parameters
