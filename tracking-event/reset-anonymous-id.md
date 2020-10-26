@@ -5,13 +5,13 @@
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-ITAnalytic.resetAnonymousID()
+CDP365Analytic.resetAnonymousId()
 ```
 {% endtab %}
 
 {% tab title="Objective-C" %}
 ```objectivec
-[ITAnalytics resetAnonymousID];
+[CDP365Analytic resetAnonymousId];
 ```
 {% endtab %}
 {% endtabs %}
