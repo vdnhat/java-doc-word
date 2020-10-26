@@ -4,19 +4,59 @@ Track this event when user create a new account success:
 
 | **Parameters** | **Content** |
 | :--- | :--- |
-| action | [ITActionEventIdentify](../tracking-event/log-event.md) |
-| contextObject | [Context item]() |
-| items | [List user item]() |
+| categoryName | String |
+| actionName | String |
+| items | List dictionary |
+| extra | Dictionary |
+
+**Example:**
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let context = ITContextObj(screenName: "CreateAnAccountViewController")
-let user = ITUserObj(userID: "62", username: "ants2020", firstName: "Nguyen", lastName: "An",
- address: "92 Nguyen Huu Canh", avatar: "https://www.dataimage.com/profile_image",
- birthday: "1992-12-12", email: "Annl@antsprogrammatic.com", gender: "Male", 
- phone: "0382992070" customerID: "211")
-ITAnalytic.logEvent(action: .ITActionEventIdentify, contextObject: context, items: [user])
+CDP365Analytic.logEvent(
+  categoryName: "user",
+  actionName: "sign_up",
+  items: [
+    [
+      "item_id": "1234567890123456", // CARD_NUMBER_ID_VALUE
+      "item_name": "Barack obama" // CARD_NAME
+    ]
+  ],
+  extra: [
+    "sign_up_type": "link_card",
+    "phone": "09xxx",
+    "first_name": "Barack",
+    "last_name": "Obama",
+    "email": "obama@antsomi.com",
+    "customer_id": "1234567890123456" // CARD_NUMBER_ID_VALUE
+  ])
+
+```
+{% endtab %}
+
+{% tab title="Objective C" %}
+```
+[CDP365Analytic logEventWithCategoryName: @ "user"
+  actionName: @ "sign_up"
+  items: @[
+    @ {
+      @ "item_id": @ "1234567890123456", // CARD_NUMBER_ID_VALUE
+        @ "item_name": @ "Barack obama" // CARD_NAME
+    }
+  ]
+  extra: @ {
+    @ "sign_up_type": @ "link_card",
+      @ "phone": @ "09xxx",
+      @ "first_name": @ "Barack",
+      @ "last_name": @ "Obama",
+      @ "email": @ "obama@antsomi.com",
+      // CARD_NUMBER_ID_VALUE: 1234567890123456
+      @ "customer_id": @ "1234567890123456"
+  }
+  dimension: nil
+];
+
 ```
 {% endtab %}
 {% endtabs %}
