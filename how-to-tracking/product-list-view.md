@@ -2,44 +2,61 @@
 
 | **Parameters** | **Context** |
 | :--- | :--- |
-| action | [ITActionEventProductListView](../tracking-event/log-event.md) |
-| contextObject | [Context item]() |
-| items | [List product item]() |
+| categoryName | String |
+| actionName | String |
+| items | List dictionary |
+| extra | Dictionary |
+
+**Example:**
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let context = ITContextObj(screenName: "CategoryProductsViewController")
-ITAnalytic.logEvent(action: .ITActionEventProductListView, contextObject: context, items: self.convertProductsToItemTracking(products:productList))
+CDP365Analytic.logEvent(categoryName: "product", actionName: "list_view", items: [
+  [
+    "item_id": "12", // PRODUCT_ID: 12,123,124,.. etc
+    "item_name": "Women discount 50%", // PRODUCT_NAME or TITLE
+    "item_type": "product",
+    "product_value": 20, // sample discount 20$
+    "proudct_type": "clother" // types: free, discount, 50% off,...,etc
+  ],
+  [
+    "item_id": "13", // PRODUCT_ID: 12,123,124,.. etc
+    "item_name": "Men discount 20%", // PRODUCT_NAME or TITLE
+    "item_type": "product",
+    "product_value": 50, // sample discount 20$
+    "proudct_type": "clother" // types: free, discount, 50% off,...,etc
+  ]
+], extra:["category": "just for me"])
+```
+{% endtab %}
 
-func convertProductsToItemTracking(products: [ProductList]) -> [ITProductObj] {
-    var itemsTracking = [ITProductObj]()
-    if products.count > 0 {
-            for prd in products {
-                let productTracking = ITProductObj(productID: prd.productId,
-                                                   productName: prd.name,
-                                                   productDescription: prd.shortDescription,
-                                                   SKU: prd.sku,
-                                                   price: prd.finalPrice,
-                                                   quantity: prd.quantity,
-                                                   brand: prd.brand,
-                                                   category: prd.category,
-                                                   variant: prd.variant,
-                                                   imageURL: prd.imageURL,
-                                                   productURL: prd.productURL,
-                                                   coupon: prd.coupon,
-                                                   sellerID: "",
-                                                   options: prd.options)
-                itemsTracking.append(productTracking)
-            }
-   }
-
-   return itemsTracking
-}
+{% tab title="Objective C" %}
+```
+[CDP365Analytic logEventWithCategoryName: @ "product"
+  actionName: @ "list_view"
+  items: @[
+    @ {
+       @ "item_id": @ "12", // PRODUCT_ID: 12,123,124,.. etc
+        @ "item_name": @ "Women discount 50%", // PRODUCT_NAME or TITLE
+        @ "item_type": @ "product",
+        @ "product_value": 20, // sample discount 20$
+        @ "product_type": @ "clother" // types: free, discount, 50% off,...,etc
+    },
+    @ {
+       @ "item_id": @ "13", // PRODUCT_ID: 12,123,124,.. etc
+        @ "item_name": @ "Men discount 20%", // PRODUCT_NAME or TITLE
+        @ "item_type": @ "product",
+        @ "product_value": 50, // sample discount 20$
+        @ "product_type": @ "clother" // types: free, discount, 50% off,...,etc
+    }
+    ]
+  extra: @{
+     @"category": @"just for me"
+  }
+  dimension: nil
+];
 ```
 {% endtab %}
 {% endtabs %}
-
-Copy  
-
 
