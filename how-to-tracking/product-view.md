@@ -6,6 +6,8 @@
 | actionName | String |
 | items | List dictionary |
 
+**Example:**
+
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
