@@ -4,19 +4,34 @@ This event should be sent when a user sign out for your service.
 
 | **Parameters** | **Content** |
 | :--- | :--- |
-| action | [ITActionEventSignOut](../tracking-event/log-event.md) |
-| contextObject | [Context item]() |
-| items | [List user item]() |
+| categoryName | String |
+| actionName | String |
+| extra | Dictionary |
+
+**Example:**
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let context = ITContextObj(screenName: "ProfileViewController")
-let user = ITUserObj(userID: "62", username: "ants2020", firstName: "Nguyen", lastName: "An", 
-address: "92 Nguyen Huu Canh", avatar: "https://www.dataimage.com/profile_image", birthday: "1992-12-12", 
-email: "Annl@antsprogrammatic.com", gender: "Male", phone: "0382992070" customerID: "211")
-ITAnalytic.logEvent(action: .ITActionEventSignOut, contextObject: context, items: [user])
+CDP365Analytic.logEvent(categoryName: "user", actionName: "sign_out", extra: [
+  "customer_id": "1234567890123456" // CARD_NUMBER_ID_VALUE: 1234567890123456
+])
+```
+{% endtab %}
+
+{% tab title="Objective C" %}
+```
+[CDP365Analytic logEventWithCategoryName: @ "user"
+  actionName: @ "sign_out"
+  items: nil
+  extra: @ {
+    @ "customer_id": @ "1234567890123456" // CARD_NUMBER_ID_VALUE: 1234567890123456
+  }
+  dimension: nil
+];
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
