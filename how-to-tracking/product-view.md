@@ -2,29 +2,41 @@
 
 | **Parameters** | **Content** |
 | :--- | :--- |
-| action | [ITActionEventProductView](../tracking-event/log-event.md) |
-| contextObject | [Context item]() |
-| items | [List product item]() |
+| categoryName | String |
+| actionName | String |
+| items | List dictionary |
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let context = ITContextObj(screenName: "ProductPageDataViewController")
-let product = ITProductObj(productID: "21",
-                       productName: "Luna Analog Watch",
-                         productDescription: "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.",
-                                 SKU: "24-WG09",
-                               price: 44,
-                            quantity: 0,
-                               brand: "Luna",
-                            category: "Home/ListProduct/ProductDetail",
-                             variant: "Gray",
-                            imageURL: "https://magento.antsomi.com/media/catalog/product/cache/f0fbff4a5f7972cd5749243e72ffc851/w/g/wg09-gr-0.jpg",
-                          productURL: "https://magento.antsomi.com/index.php/luma-analog-watch.html",
-                              coupon: "ANTSSOMI",
-                            sellerID: "",
-                             options: [])
-ITAnalytic.logEvent(action: .ITActionEventProductView, contextObject: context, items: [product])
+CDP365Analytic.logEvent(categoryName: "product", actionName: "view", items: [
+  [
+    "item_id": "12", // PRODUCT_ID: 12,123,124,.. etc
+    "item_name": "Women discount 50%", // PRODUCT_NAME or TITLE
+    "item_type": "product",
+    "product_value": 20, // sample discount 20$
+    "proudct_type": "clother" // types: free, discount, 50% off,...,etc
+  ]
+])
+```
+{% endtab %}
+
+{% tab title="Objective C" %}
+```
+[CDP365Analytic logEventWithCategoryName: @ "product"
+  actionName: @ "view"
+  items: @[
+    @ {
+       @ "item_id": @ "12", // PRODUCT_ID: 12,123,124,.. etc
+        @ "item_name": @ "Women discount 50%", // PRODUCT_NAME or TITLE
+        @ "item_type": @ "coupon",
+        @ "product_value": 20, // sample discount 20$
+        @ "product_type": @ "clother" // types: free, discount, 50% off,...,etc
+    }]
+  extra: nil
+  dimension: nil
+];
+
 ```
 {% endtab %}
 {% endtabs %}
