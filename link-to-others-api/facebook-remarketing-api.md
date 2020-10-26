@@ -21,9 +21,9 @@ Set up your app for advertising by adding the following details:
 * **Terms of Service URL** - Provide a [Terms of Service](https://l.facebook.com/l.php?u=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTerms_of_service&h=AT281XGs3pKpKN2JEV0Nkoqz3x4NSk8yUffxDbGvr64uc9ZTNiZQqDfQ4cl_zmt8XJUG-uhqtTwOFNDE12LgqLg8bnlsHLhReJApgZoHoEgrLEHp81fc9ScA_f7Nlb7YiUY31oM5ZDAd64Pg0MxM1ukW) URL.
 * **Platform** - Scroll to the bottom of the Settings panel to add the iOS Platform.
 
-#### Update the ANInsight Configuration File
+#### Update the CDP365\_Config Configuration File
 
-* Configure the information property list file \(`ANInsight.plist`\) with an XML snippet that contains data about your app.
+* Configure the information property list file \(`CDP365_Config.plist`\) with an XML snippet that contains data about your app.
 
 1. Right-click `info.plist`, and choose **Open As Source Code**.
 2. Copy and paste the following XML snippet into the body of your file \( `<dict>...</dict>`\).

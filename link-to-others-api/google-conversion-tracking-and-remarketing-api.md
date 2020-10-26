@@ -1,6 +1,6 @@
 # Google Conversion Tracking And Remarketing API
 
-#### Create a develop token \(for ANTSER\)
+#### Create a develop token 
 
 1. You must have a [Google Ads Manager Account](https://support.google.com/google-ads/answer/7459399) to apply for access to the API. Manager Accounts **cannot** be created using the same email address as an **existing** Google Ads account. You must therefore use an email address that hasn't already been associated with a Google Ads account to create your Manager Account.
 2. Sign up for AdWords API access through your **Manager Account**. [Sign in](https://ads.google.com/home/tools/manager-accounts/), then navigate to  **TOOLS & SETTINGS &gt; SETUP &gt; API Center**. The **API Center** option will appear only for Google Ads Manager Accounts. All fields on the API Access form must be completed, and the Terms and Conditions accepted. Make sure your information is correct and your company's website URL is functioning: If the website is not a live page, we won't be able to process your application.
@@ -19,9 +19,9 @@ To create a Link ID, do the following:
 
   5. Click the **CREATE LINK ID** button. The screen refreshes to show you the Third-party app analytics page with the LINK IDs you’ve just created.
 
-#### Update the ANInsight Configuration File
+#### Update the CDP365\_Config Configuration File
 
-* Configure the information property list file \(`ANInsight.plist`\) with an XML snippet that contains data about your app.
+* Configure the information property list file \(`CDP365_Config.plist`\) with an XML snippet that contains data about your app.
 
 1. Right-click `info.plist`, and choose **Open As Source Code**.
 2. Copy and paste the following XML snippet into the body of your file \( `<dict>...</dict>`\).
