@@ -4,6 +4,7 @@
 
 ## Tracking Event
 
+* [Log Screen](tracking-event/log-screen.md)
 * [Log Event](tracking-event/log-event.md)
 * [Reset Anonymous ID](tracking-event/reset-anonymous-id.md)
 
