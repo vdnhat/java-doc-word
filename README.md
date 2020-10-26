@@ -18,6 +18,26 @@ description: >-
 
 #### Import the CDP365Analytic SDK
 
+* **CocoaPods**
+
+The simplest way to import the SDK into an iOS project is to use CocoaPods. Open your project's Podfile and add the line to your app's target:
+
+```c
+pod 'CDP365Analytic'
+```
+
+Then from the command line run:
+
+```c
+pod install --repo-update
+```
+
+This creates an .xcworkspace file for your application. Use this file for all future development on your application.
+
+{% hint style="warning" %}
+**Note:** If you're new to CocoaPods, see their official documentation for in to how to create and use Podfiles
+{% endhint %}
+
 * **Manual**
 
 1. Download an unzip the SDK framework directly, and import the following frameworks into your Xcode project: [`CDP365Analytic.framework`](https://drive.google.com/drive/folders/118p2mnQG-xzd3HI2gCL0zpTvHocw2OnK?usp=sharing)\`\`
