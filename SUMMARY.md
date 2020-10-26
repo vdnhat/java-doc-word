@@ -18,7 +18,6 @@
 * [Product click](how-to-tracking/product-click.md)
 * [Product list view](how-to-tracking/product-list-view.md)
 * [Add wish](how-to-tracking/add-wish.md)
-* [View wish list](how-to-tracking/view-wish-list.md)
 * [Add compare](how-to-tracking/add-compare.md)
 * [View compare list](how-to-tracking/view-compare-list.md)
 * [View cart](how-to-tracking/view-cart.md)
