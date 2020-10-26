@@ -3,8 +3,8 @@
 | **Parameters** | **Content** |
 | :--- | :--- |
 | action | [ITActionEventAddToCart](../tracking-event/log-event.md) |
-| contextObject | [Context item](../tracking-parameters/context-param.md) |
-| items | [List product will add to cart](../tracking-parameters/items-param.md#creating-an-itproductobj-object) |
+| contextObject | [Context item]() |
+| items | [List product will add to cart]() |
 
 {% tabs %}
 {% tab title="Swift" %}

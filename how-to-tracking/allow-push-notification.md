@@ -5,7 +5,7 @@ When user allow the push notification service
 | **Parameters** | **Content** |
 | :--- | :--- |
 | action | [ITActionEventAllowPushNotification](../tracking-event/log-event.md) |
-| extraObject | [Extra item](../tracking-parameters/extra-param.md) |
+| extraObject | [Extra item]() |
 
 {% tabs %}
 {% tab title="Swift" %}

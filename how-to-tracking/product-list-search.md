@@ -3,9 +3,9 @@
 | **Parameters** | **Content** |
 | :--- | :--- |
 | action | [ITActionEventProductSearch](../tracking-event/log-event.md) |
-| contextObject | [Context item](../tracking-parameters/context-param.md) |
-| extraObject | [Extra item](../tracking-parameters/extra-param.md) |
-| items | [List product item which searched by keyword](../tracking-parameters/items-param.md#creating-an-itproductobj-object) |
+| contextObject | [Context item]() |
+| extraObject | [Extra item]() |
+| items | [List product item which searched by keyword]() |
 
 {% tabs %}
 {% tab title="Swift" %}

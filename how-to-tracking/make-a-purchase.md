@@ -3,10 +3,10 @@
 | **Parameters** | **Content** |
 | :--- | :--- |
 | action | [ITActionEventProductPurchase](../tracking-event/log-event.md) |
-| contextObject | [Context item](../tracking-parameters/context-param.md) |
-| extraObject | [Extra item](../tracking-parameters/extra-param.md) |
-| dimsObject | [Dimension item](../tracking-parameters/dimension-param.md) |
-| items | [List product item](../tracking-parameters/items-param.md#creating-an-itproductobj-object) |
+| contextObject | [Context item]() |
+| extraObject | [Extra item]() |
+| dimsObject | [Dimension item]() |
+| items | [List product item]() |
 
 {% tabs %}
 {% tab title="Swift" %}

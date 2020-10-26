@@ -5,8 +5,8 @@ This event should be sent when a user sign out for your service.
 | **Parameters** | **Content** |
 | :--- | :--- |
 | action | [ITActionEventSignOut](../tracking-event/log-event.md) |
-| contextObject | [Context item](../tracking-parameters/context-param.md) |
-| items | [List user item](../tracking-parameters/items-param.md#creating-an-ituserobj-object) |
+| contextObject | [Context item]() |
+| items | [List user item]() |
 
 {% tabs %}
 {% tab title="Swift" %}

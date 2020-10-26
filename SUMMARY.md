@@ -8,13 +8,6 @@
 * [Log Event](tracking-event/log-event.md)
 * [Reset Anonymous ID](tracking-event/reset-anonymous-id.md)
 
-## Tracking Parameters
-
-* [Context Param](tracking-parameters/context-param.md)
-* [Dimension Param](tracking-parameters/dimension-param.md)
-* [Extra Param](tracking-parameters/extra-param.md)
-* [Items Param](tracking-parameters/items-param.md)
-
 ## How To Tracking?
 
 * [Screen view](how-to-tracking/screen-view.md)

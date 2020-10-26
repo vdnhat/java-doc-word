@@ -5,7 +5,7 @@ Here you'll send a named screen view to Analytics whenever the user opens or cha
 |  **Parameters** |  **Content** |
 | :--- | :--- |
 | action |  [ITActionEventScreenView](../tracking-event/log-event.md) |
-| contentObject | [ Context item](../tracking-parameters/context-param.md) |
+| contentObject | [ Context item]() |
 
  **Example:**
 
