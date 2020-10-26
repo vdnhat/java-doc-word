@@ -5,23 +5,19 @@ Here you'll send a named screen view to Analytics whenever the user opens or cha
 |  **Parameters** |  **Content** |
 | :--- | :--- |
 | action |  [ITActionEventScreenView](../tracking-event/log-event.md) |
-| contentObject | [ Context item]() |
 
  **Example:**
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let contextObject = ITContextObj(screenName: "HomeViewController")
-ITAnalytic.logEvent(action: .ITActionEventScreenView, contextObject: contextObject)
+CDP365Analytic.logEvent(screenName: "HomeViewController")
 ```
 {% endtab %}
 
 {% tab title="Objective-C" %}
 ```objectivec
-ITContextObj *context = [[ITContextObj alloc] initWithScreenName:@"HomeViewController"];
-[ITAnalytics logEventWithAction:ITActionEventITActionEventScreenView
-contextObject:context extraObject:nil dimsObject:nil itemsObject:nil];
+[CDP365Analytic logEventWithScreenName:@"HomeViewController"];
 ```
 {% endtab %}
 {% endtabs %}
