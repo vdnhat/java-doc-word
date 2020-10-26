@@ -2,40 +2,45 @@
 
 | **Parameters** | **Content** |
 | :--- | :--- |
-| action | [ITActionEventRemoveCart](../tracking-event/log-event.md) |
-| contextObject | [Context item]() |
-| items | [List product will remove from cart]() |
+| categoryName | String |
+| actionName | String |
+| items | List dictionary |
+
+**Example:**
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let context = ITContextObj(screenName: "CartDataViewController")
-ITAnalytic.logEvent(action: .ITActionEventRemoveCart, contextObject: context, items: self.convertCartProductToItemTracking(cartProducts: cartViewModal.cartModel.cartProducts))
+CDP365Analytic.logEvent(categoryName: "product", actionName: "remove_cart", items: [
+  [
+    "item_id": "12", // PRODUCT_ID: 12,123,124,.. etc
+    "item_name": "Women discount 50%", // PRODUCT_NAME or TITLE
+    "item_type": "product",
+    "product_value": 20, // sample discount 20$
+    "proudct_type": "clother" // types: free, discount, 50% off,...,etc
+  ]
+])
+```
+{% endtab %}
 
-func convertCartProductsToItemTracking(cartProducts: [ProductList]) -> [ITProductObj] {
-    var itemsTracking = [ITProductObj]()
-    if cartProducts.count > 0 {
-            for prd in cartProducts {
-                let productTracking = ITProductObj(productID: prd.productId,
-                                                   productName: prd.name,
-                                                   productDescription: prd.shortDescription,
-                                                   SKU: prd.sku,
-                                                   price: prd.finalPrice,
-                                                   quantity: prd.quantity,
-                                                   brand: prd.brand,
-                                                   category: prd.category,
-                                                   variant: prd.variant,
-                                                   imageURL: prd.imageURL,
-                                                   productURL: prd.productURL,
-                                                   coupon: prd.coupon,
-                                                   sellerID: "",
-                                                   options: prd.options)
-                itemsTracking.append(productTracking)
-            }
-   }
-   return itemsTracking
-}
+{% tab title="Objective C" %}
+```
+[CDP365Analytic logEventWithCategoryName: @ "product"
+  actionName: @ "remove_cart"
+  items: @[
+    @ {
+       @ "item_id": @ "12", // PRODUCT_ID: 12,123,124,.. etc
+        @ "item_name": @ "Women discount 50%", // PRODUCT_NAME or TITLE
+        @ "item_type": @ "product",
+        @ "product_value": 20, // sample discount 20$
+        @ "product_type": @ "clother" // types: free, discount, 50% off,...,etc
+    }]
+  extra: nil
+  dimension: nil
+];
 ```
 {% endtab %}
 {% endtabs %}
+
+
 

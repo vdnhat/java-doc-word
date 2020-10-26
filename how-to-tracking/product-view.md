@@ -31,7 +31,7 @@ CDP365Analytic.logEvent(categoryName: "product", actionName: "view", items: [
     @ {
        @ "item_id": @ "12", // PRODUCT_ID: 12,123,124,.. etc
         @ "item_name": @ "Women discount 50%", // PRODUCT_NAME or TITLE
-        @ "item_type": @ "coupon",
+        @ "item_type": @ "product",
         @ "product_value": 20, // sample discount 20$
         @ "product_type": @ "clother" // types: free, discount, 50% off,...,etc
     }]
