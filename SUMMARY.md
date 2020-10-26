@@ -26,7 +26,6 @@
 * [Remove cart](how-to-tracking/remove-cart.md)
 * [Checkout](how-to-tracking/checkout.md)
 * [Make A Purchase](how-to-tracking/make-a-purchase.md)
-* [Allow push notification](how-to-tracking/allow-push-notification.md)
 
 ## LINKS TO OTHERS API <a id="link-to-others-api"></a>
 
