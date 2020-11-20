@@ -10,7 +10,7 @@ description: >-
 #### Prerequisites
 
 * Use Xcode 10 or higher.
-* Target iOS 12.0 or higher.
+* Target iOS 10.0 or higher.
 
 {% hint style="warning" %}
 **`Note:`**Begining with iOS 9, iOS app use App Transport Security \(ATS\), a data in transit security feature that enforces encrypted conections. See App Transport Security to configure your info. plist continuing to ensure your ads are not impacted bey ATS
